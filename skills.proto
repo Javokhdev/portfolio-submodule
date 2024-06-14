@@ -15,11 +15,11 @@ service SkillService {
 
 message Skill {
     string id           = 1;
-    string user_id      = 2;
+    Users user_id      = 2;
     string name         = 3;
     string level        = 4;
 }
 
 message GetAllSkills {
-    repeated Skill restorans = 1;
+    repeated Skill skills = 1;
 }

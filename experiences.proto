@@ -15,7 +15,7 @@ service ExperienceService {
 
 message Experience {
     string id          = 1;
-    string user_id     = 2;
+    Users user_id     = 2;
     string title       = 3;
     string company     = 4;
     string description = 5; 
