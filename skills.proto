@@ -15,7 +15,7 @@ service SkillService {
 
 message Skill {
     string id           = 1;
-    Users user_id      = 2;
+    string user_id      = 2;
     string name         = 3;
     string level        = 4;
 }
