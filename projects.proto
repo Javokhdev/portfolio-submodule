@@ -15,7 +15,7 @@ service ProjectService {
 
 message Project {
     string id           = 1;
-    Users user_id      = 2;
+    string user_id      = 2;
     string title        = 3;
     string description  = 4; 
     string url          = 5;
