@@ -15,7 +15,7 @@ service EducationService {
 
 message Education {
     string id              = 1;
-    Users user_id         = 2;
+    string user_id         = 2;
     string institution     = 3;
     string degree          = 4;
     string field_of_study  = 5; 
