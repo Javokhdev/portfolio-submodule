@@ -2,8 +2,9 @@ syntax = "proto3";
 
 option go_package = "genprotos/";
 
-package protos;
+package portfolio_submodule;
 import "users.proto";
+
 service EducationService {
     rpc CreateEducation(Education) returns (Void) {}
     rpc DeleteEducation(ById) returns (Void) {}

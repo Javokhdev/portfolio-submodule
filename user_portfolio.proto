@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "genprotos/";
+
+package portfolio_submodule;
+
+import "educations.proto";
+import "experiences.proto";
+import "projects.proto";
+import "skills.proto";
+
+
+message UserPortfolio {
+    repeated Project projects = 1;
+    repeated Skill skills = 2;
+    repeated Experience experiences = 3;
+    repeated Education educations = 4;
+}

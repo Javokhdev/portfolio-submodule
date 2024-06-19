@@ -2,7 +2,8 @@ syntax = "proto3";
 
 option go_package = "genprotos/";
 
-package protos;
+package portfolio_submodule;
+
 import "users.proto";
 service ProjectService {
     rpc CreateProject(Project) returns (Void) {}

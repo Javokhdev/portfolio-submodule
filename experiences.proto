@@ -2,7 +2,8 @@ syntax = "proto3";
 
 option go_package = "genprotos/";
 
-package protos;
+package portfolio_submodule;
+
 import "users.proto";
 service ExperienceService {
     rpc CreateExperience(Experience) returns (Void) {}
