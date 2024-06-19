@@ -2,7 +2,12 @@ syntax = "proto3";
 
 option go_package = "genprotos/";
 
-package protos;
+package porfolio_submodule;
+
+import "educations.proto";
+import "experiences.proto";
+import "projects.proto";
+import "skills.proto";
 
 service UserService {
     rpc CreateUser(Users) returns (Void) {}
@@ -27,4 +32,11 @@ message Users {
 
 message GetAllUsers {
     repeated Users users = 1;
+}
+
+message UserPortfolio {
+    repeated Project projects = 1;
+    repeated Skill skills = 2;
+    repeated Experience experiences = 3;
+    repeated Education educations = 4;
 }
